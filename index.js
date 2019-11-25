@@ -6,7 +6,7 @@ const app = new Koa();
 
 const router = new Router();
 
-const port = 3333;
+const port = process.env.PORT;
 
 const index = ctx => {
   ctx.body = "zero ao deply";
